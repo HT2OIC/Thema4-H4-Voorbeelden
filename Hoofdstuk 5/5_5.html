@@ -1,0 +1,68 @@
+<!-- begin CSS blok -->
+<style>
+    table { border-collapse: collapse; }  
+    td, th { border: 1px solid black; padding: 5px; }       
+    thead { background-color: #f0f0f0 } 
+    tfoot { font-style: italic; }  
+    col {background-color: #f0f0f0;} /* grijze achtergrondkleur */
+    col.wetenschapsvakken { background-color: #f0fff0; } /* lichtgroene achtergrondkleur */
+    col.taalvakken { background-color: #f0f0ff; } /* lichtblauwe achtergrondkleur */
+ </style>
+ <!-- einde CSS blok -->
+ <table>
+    <caption>Cijfers studenten</caption>
+    <colgroup>
+       <col>
+       <col class="wetenschapsvakken" span="2">
+       <col class="taalvakken">
+    </colgroup>
+    <thead>
+       <tr>
+          <th scope="col" rowspan="2">Student</th>
+          <th scope="col" colspan="3">Vakken</th>
+          <th scope="col" rowspan="2">Aanwezigheid</th>
+       </tr>
+       <tr>
+          <th scope="col">Wiskunde</th>
+          <th scope="col">Fysica</th>
+          <th scope="col">Nederlands</th>
+       </tr>
+    </thead>
+    <tbody>
+       <tr>
+          <th scope="row">Ayoub</th>
+          <td>90</td>
+          <td>85</td>
+          <td>88</td>
+          <td>hoog</td>
+       </tr>
+       <tr>
+          <th scope="row">Brian</th>
+          <td>78</td>
+          <td>92</td>
+          <td>80</td>
+          <td>gemiddeld</td>
+       </tr>
+       <tr>
+          <th scope="row">Chee</th>
+          <td>85</td>
+          <td>89</td>
+          <td>92</td>
+          <td>laag</td>
+       </tr>
+       <tr>
+          <th scope="row">David</th>
+          <td colspan="3">vrijgesteld</td>
+          <td></td>
+       </tr>
+    </tbody>
+    <tfoot>
+       <tr>
+          <th scope="row">gemiddelde</th>
+          <td>84.33</td>
+          <td>88.67</td>
+          <td>86.67</td>
+          <td> </td>
+       </tr>
+    </tfoot>
+ </table>
