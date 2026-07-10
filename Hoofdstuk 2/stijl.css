@@ -1,0 +1,127 @@
+/* stijl.css — altijd bovenaan */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basisstijlen */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #0a0f1e;
+    color: #c9d6e3;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+/* Kleurenpallet */
+:root {
+    --donker:  #0a0f1e;
+    --kaart:   #111827;
+    --rand:    #1e2d40;
+    --tekst:   #c9d6e3;
+    --accent:  #00ff88;
+}
+
+/* Titels opmaken */
+h1,h2,h3 {
+    color: var(--accent);
+}
+
+/* Header opmaken */
+header {
+    background-color: var(--kaart);
+    border-bottom: 2px solid var(--accent);
+    padding: 18px 40px;
+}
+
+nav a {
+    color: var(--tekst);
+    text-decoration: none;
+}
+
+/* Inleiding opmaken */
+.inleiding {
+    background-color: var(--kaart);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 50px 40px;
+    margin-bottom: 40px;
+}
+
+.inleiding h1 {
+    color: #ffffff;
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+
+.inleiding em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+/* Footer opmaken */
+footer {
+    background-color: var(--kaart);
+    border-top: 1px solid var(--rand);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4a5568;
+    padding: 24px;
+}
+
+/* Boxmodel artikel en kaartjes */
+article, aside {
+    background-color: var(--kaart);
+    border: 1px solid var(--rand);
+    border-radius: 8px;
+    padding: 36px;
+}
+ 
+.regels-grid div {
+    background-color: var(--donker);
+    border: 1px solid var(--rand);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* flexboxen instellen */
+header { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; gap: 30px; list-style: none; }
+ 
+.content-wrapper { display: flex; gap: 40px; }
+article { flex: 2 1 60%; }   /* neemt 2x meer ruimte dan de aside */
+aside   { flex: 1 1 30%; }
+ 
+.regels-grid { display: flex; flex-wrap: wrap; gap: 20px; }
+.regels-grid div { flex: 1 1 200px; }
+
+/* Interactief maken */
+nav a { transition: color 0.2s ease; }
+nav a:hover { color: var(--accent); }
+ 
+.regels-grid div { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.regels-grid div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+ 
+.login input:focus { border-color: var(--accent); outline: none; }
+.login button { background-color: var(--accent); color: var(--donker); cursor: pointer; }
+.login button:hover { background-color: #00cc6f; }
+
+/* Pagina responsive maken */
+img { max-width: 100%; }   /* afbeeldingen nooit breder dan hun container */
+ 
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 14px; text-align: center; }
+    .content-wrapper { flex-direction: column; }
+    .inleiding { padding: 30px 20px; }
+    main  { padding: 20px 16px; }
+}

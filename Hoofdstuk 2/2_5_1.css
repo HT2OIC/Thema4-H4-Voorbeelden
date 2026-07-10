@@ -1,0 +1,7 @@
+.grid { display: flex; flex-wrap: wrap; gap: 16px; }
+.grid div { flex: 1 1 300px; }   /* wrapt vanzelf als het te smal wordt */
+ 
+/* stijlen die pas gelden op smalle schermen */
+@media (max-width: 600px) {
+    .grid { flex-direction: column; }
+}

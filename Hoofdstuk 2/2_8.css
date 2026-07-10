@@ -1,0 +1,12 @@
+nav a { transition: color 0.2s ease; }
+nav a:hover { color: var(--accent); }
+ 
+.regels-grid div { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.regels-grid div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+ 
+.login input:focus { border-color: var(--accent); outline: none; }
+.login button { background-color: var(--accent); color: var(--donker); cursor: pointer; }
+.login button:hover { background-color: #00cc6f; }

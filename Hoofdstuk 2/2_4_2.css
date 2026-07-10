@@ -1,0 +1,20 @@
+.balk {
+    /* Flexbox-instellingen */
+    /*----------------------*/
+    display: flex;
+    justify-content: space-between;  /* verdeelt de items over de volledige breedte */
+    align-items: center;             /* centreert de items verticaal */
+    gap: 20px;                       /* ruimte tussen de items */
+    /*----------------------*/
+    height: 120px;
+    border: 2px solid #666;
+    padding: 10px;
+}
+
+
+/* Flex-items */
+.vak {
+    padding: 20px;
+    background-color: steelblue;
+    color: white;
+}

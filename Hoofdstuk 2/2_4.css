@@ -1,0 +1,13 @@
+article, aside {
+    background-color: var(--kaart);
+    border: 1px solid var(--rand);
+    border-radius: 8px;
+    padding: 36px;
+}
+ 
+.regels-grid div {
+    background-color: var(--donker);
+    border: 1px solid var(--rand);
+    border-radius: 6px;
+    padding: 20px;
+}

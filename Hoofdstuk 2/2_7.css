@@ -1,0 +1,8 @@
+img { max-width: 100%; }   /* afbeeldingen nooit breder dan hun container */
+ 
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 14px; text-align: center; }
+    .content-wrapper { flex-direction: column; }
+    .inleiding { padding: 30px 20px; }
+    main  { padding: 20px 16px; }
+}

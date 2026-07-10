@@ -1,0 +1,8 @@
+a {
+    color: #333;
+    transition: color 0.2s ease;   /* eigenschap  duur  timing */
+}
+
+a:hover {
+    color: #e63946;
+}

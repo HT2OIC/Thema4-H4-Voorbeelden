@@ -1,0 +1,7 @@
+:root {
+    --hoofd:   #2d6a4f;
+    --licht:   #f1faee;
+}
+ 
+body   { background-color: var(--licht); }
+h1, h2 { color: var(--hoofd); }

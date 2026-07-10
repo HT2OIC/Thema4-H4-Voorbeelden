@@ -1,0 +1,7 @@
+.kaart {
+    padding: 24px;          /* ruimte binnenin, rond de tekst */
+    border: 2px solid #ccc; /* het kader */
+    border-radius: 8px;     /* afgeronde hoeken */
+    margin: 20px;           /* ruimte buiten de kaart */
+    margin: 0 auto;         /* horizontaal centreren */
+}

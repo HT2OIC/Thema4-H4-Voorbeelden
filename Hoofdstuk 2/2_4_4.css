@@ -1,0 +1,22 @@
+.balk {
+    display: flex;
+    gap: 10px;
+}
+
+.vak {
+    padding: 20px;
+    background-color: steelblue;
+    color: white;
+}
+
+.links {
+    flex: 1;   /* krijgt 1 deel van de beschikbare ruimte */
+}
+
+.midden {
+    flex: 2;   /* krijgt 2 delen en wordt dus dubbel zo breed */
+}
+
+.rechts {
+    flex: 1;   /* krijgt 1 deel van de beschikbare ruimte */
+}

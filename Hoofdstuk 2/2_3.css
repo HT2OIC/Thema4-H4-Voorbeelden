@@ -1,0 +1,45 @@
+:root {
+    --donker:  #0a0f1e;
+    --kaart:   #111827;
+    --rand:    #1e2d40;
+    --tekst:   #c9d6e3;
+    --accent:  #00ff88;
+}
+
+
+h1,h2,h3 {
+    color: var(--accent);
+}
+
+header {
+    background-color: var(--kaart);
+    border-bottom: 2px solid var(--accent);
+}
+
+.inleiding {
+    background-color: var(--kaart);
+    border-left: 4px solid var(--accent);
+}
+
+.inleiding h1 {
+    color: #ffffff;
+    font-size: 2.4rem;
+}
+
+.inleiding em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+nav a {
+    color: var(--tekst);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--kaart);
+    border-top: 1px solid var(--rand);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4a5568;
+}

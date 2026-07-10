@@ -1,0 +1,20 @@
+/* stijl.css — altijd bovenaan */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #0a0f1e;
+    color: #c9d6e3;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
