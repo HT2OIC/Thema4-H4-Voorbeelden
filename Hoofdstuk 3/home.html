@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe - Bescherm jezelf online</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/cybersafe.png" alt="Logo CyberSafe">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bedreigingen</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inleiding">
+            <h1>Bescherm jezelf tegen <em>cyberdreigingen</em></h1>
+            <p>Elke dag worden duizenden mensen slachtoffer van phishing, malware en identiteitsdiefstal.</p>
+        </section>
+
+        <div class="content-wrapper">
+            <article>
+                <h2>Wat is phishing?</h2>
+                <img src="img/phishing.png" alt="Voorbeeld van een phishingmail">
+                <p>Phishing is oplichting via nep-e-amils. Aanvallers doen zich voor als een bank om
+                    <strong>wachtwoorden</strong>te stelen.
+                </p>
+
+                <h3>Hoe herken je een phishingmail?</h3>
+                <p> Phishingmails bevatten vaak subtiele fouten: een vreemd e-mailadres, een link die niet klopt, of
+                    taaflouten in de tekst. Ze spelen in op urgentie - "Uw rekening word geblokkeerd!" - om je snel te
+                    laten handelen.</p>
+
+                <h3>Wat als je toch geklikt hebt?</h3>
+                <p> Verander onmiddellijk al je wachtwoorden en schakel tweefactorauthenticatie in. Meld het ook bij het
+                    <a href="https://ccb.belgium.be" target="_blank">Centrum voor Cybersecurity België.</a>
+                </p>
+                <section class="quiz">
+                    <h2>Phishing of niet?</h2>
+                    <p>"Uw pakket wacht. Betaal €1 via deze link."</p>
+                    <button id="phishing">Phishing</button>
+                    <button id="echt">Echt</button>
+                    <p id="feedback"></p>
+                </section>
+            </article>
+
+            <aside>
+                <h3>Snelle tips</h3>
+                <ul>
+                    <li>Gebruik een wachtwoordmanager</li>
+                    <li>Activeer tweefactorauthenticatie</li>
+                    <li>Update je software regelmatig</li>
+                </ul>
+
+                <h3>Wat doe je als je gehackt bent?</h3>
+                <ol>
+                    <li>Verander onmiddellijk al je wachtwoorden</li>
+                    <li>Activeer tweefactorauthenticatie</li>
+                    <li>Meld het bij het Centrum voor Cybersecurity België</li>
+                </ol>
+            </aside>
+        </div>
+
+        <section class="basisregels">
+            <h2>De 4 basisregels van cyberveiligheid</h2>
+            <div class="regels-grid">
+
+                <div>
+                    <h3>🔑 Sterke wachtwoorden</h3>
+                    <p>
+                        Gebruik minstens 12 tekens met hoofdletters,
+                        cijfers en symbolen. Hergebruik nooit hetzelfde
+                        wachtwoord op verschillende websites.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🛡️ Tweefactorauthenticatie</h3>
+                    <p>
+                        Voeg een tweede verificatiestap toe aan je accounts.
+                        Zelfs bij een gelekt wachtwoord blijf je veilig.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🔄 Software updaten</h3>
+                    <p>
+                        Updates sluiten beveiligingslekken. Stel je systeem
+                        in op automatische updates zodat je niets mist.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>🧠 Denk na voor je klikt</h3>
+                    <p>
+                        Bij twijfel: niet klikken. Controleer altijd de
+                        afzender en de URL voordat je gegevens invoert.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <form>
+                <div>
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" placeholder="jouw@email.be" required>
+                </div>
+                <div>
+                    <label for="bericht">Bericht</label>
+                    <input type="text" id="bericht" name="bericht" required>
+                </div>
+                <div>
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input type="password" id="wachtwoord" name="wachtwoord" required>
+                </div>
+                <label><input type="checkbox" id="toon-ww"> Toon wachtwoord</label>
+                <button type="submit">Versturen</button>
+                <p id="ww-sterkte"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CyberSafe</p>
+    </footer>
+</body>
+
+</html>

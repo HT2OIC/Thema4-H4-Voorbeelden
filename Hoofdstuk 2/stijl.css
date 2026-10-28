@@ -112,9 +112,9 @@ nav a:hover { color: var(--accent); }
     box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
 }
  
-.login input:focus { border-color: var(--accent); outline: none; }
-.login button { background-color: var(--accent); color: var(--donker); cursor: pointer; }
-.login button:hover { background-color: #00cc6f; }
+.contact input:focus { border-color: var(--accent); outline: none; }
+.contact button { background-color: var(--accent); color: var(--donker); cursor: pointer; }
+.contact button:hover { background-color: #00cc6f; }
 
 /* Pagina responsive maken */
 img { max-width: 100%; }   /* afbeeldingen nooit breder dan hun container */
